@@ -10,7 +10,7 @@
 
 ## Contributors
 1. Clone this repository.
-2. PR needs to have an issue attached to it, if not the branch should be named ```hotfix/no-ref/<name>``` otherwise it would be ```hotfix/issue-000/<name>```.
+2. PR needs to have an issue attached to it, if not the branch should be named ```hotfix/no-ref/<name>``` otherwise it would be ```hotfix/issue-000```.
 3. Go PR for change request.
 4. Have at least 1 Reviewer review the changes.
 5. When approved merge it.
