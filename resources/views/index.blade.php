@@ -19,8 +19,8 @@
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li><a>Home</a></li>
-        <li><a>Services</a></li>
-        <li><a>About us</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About us</a></li>
       </ul>
     </div>
     <a class=""><img src="/img/AADLogo.png" alt="Company Logo" id="top"></a>
@@ -46,7 +46,7 @@
 <div class="text-center md:text-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
   <h1 class="font-bold text-2xl px-5 py-2 lg:text-6xl">Innovative <span class="text-[#5B61DC]">Software Solutions</span> for Modern Businesses</h1>
   <p class="px-5 py-2">Empowering your business with cutting-edge technology</p>
-  <button class="btn bg-[#5B61DC] text-white hover:bg-violet-700 md:ml-5">Get in touch</button>
+  <button class="btn bg-[#5B61DC] text-white hover:bg-violet-700 md:ml-5"><a href="#contact">Get in touch</a></button>
 </div>
 <div class= "ml-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
 <dotlottie-player src="https://lottie.host/49b52c3f-a9a9-4291-8f9f-088471c136b1/Jb7jgrzrAz.json" background="transparent" speed="1"" loop autoplay></dotlottie-player>
@@ -55,8 +55,8 @@
 
 
 <!--Service--> 
-
-<div class="bg-[#172A38] px-5 sm:hidden md:block" id="service"> 
+<div class="hidden lg:flex">
+<div class="bg-[#172A38] px-5" id="service"> 
   <h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
   <div class="flex flex-wrap  justify-center pb-10">
 
@@ -73,7 +73,7 @@
   <figure><img src="/img/Service2.png" alt="Shoes" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Mobile Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+    <p>We design and develop high-performing mobile apps for Android and iOS that engage users and achieve your business goals.</p>
   </div>
 </div>
 
@@ -81,7 +81,7 @@
   <figure><img src="/img/Service3.png" alt="Shoes" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Custom Software Development</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>We create bespoke software solutions tailored to meet your unique business needs, enhancing efficiency and driving growth.</p>
   </div>
 </div>
 
@@ -112,69 +112,60 @@
 
 </div>
 </div>
+</div>
 
 
-<!--mobile-view-->
-<div class="md:hidden lg:hidden sm:block bg-[#172A38]  w-fit">
+<!--service-mobile-view-->
+<div class="bg-[#172A38] lg:hidden">
 <h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
 <div class="w-full carousel rounded-box">
 
   <div class="carousel-item w-full justify-center">
+ <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div>
+
+  <div class="carousel-item w-full justify-center">
   <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <figure><img src="/img/Service2.png" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
-  </div>
-</div>
-  </div>
-
-  <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
-  <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+    <h2 class="card-title text-[#5B61DC]">Mobile Development</h2>
+    <p>We design and develop high-performing mobile apps for Android and iOS that engage users and achieve your business goals.</p>
   </div>
 </div>
   </div> 
 
   <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service3.png" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+    <h2 class="card-title text-[#5B61DC]">Custom Software Development</h2>
+    <p>We create bespoke software solutions tailored to meet your unique business needs, enhancing efficiency and driving growth.</p>
   </div>
 </div>
   </div>
 
   <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service4.png" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
-  </div>
-</div>
-  </div> 
-
-  <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
-  <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+    <h2 class="card-title text-[#5B61DC]">Virtual Reality (VR)</h2>
+    <p>Dive into fully immersive VR environments designed for gaming, training, and simulations, offering unforgettable user experiences and innovative solutions.</p>
   </div>
 </div>
   </div> 
 
   <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service5.png" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+    <h2 class="card-title text-[#5B61DC]">Augmented Reality (AR)</h2>
+    <p>Transform your business with immersive AR experiences that blend the digital and physical worlds, perfect for enhancing customer engagement and streamlining operations.</p>
   </div>
 </div>
   </div> 
@@ -188,6 +179,21 @@
   </div>
 </div>
   </div> 
+
+  <div class="carousel-item w-full justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service6.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Business Software</h2>
+    <p>Optimize your operations with custom business software solutions tailored to enhance efficiency, productivity, and growth.</p>
+  </div>
+</div>
+
+</div>
+</div>
+  </div> 
+
+
 </div>
 </div>
 

@@ -4,11 +4,12 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-     "./node_modules/flowbite/**/*.js",
+    ["./src/**/*.{html,js}"],
   ],
   theme: {
+    extend: {}, 
     screens: {
-      'sm': '640px',
+      'sm': '375px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -23,9 +24,8 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
   },
-  plugins: [require('daisyui'),require('flowbite/plugin')],
+  plugins: [require('daisyui'),],
 
   daisyui: {
     themes: [
