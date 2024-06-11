@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth duration-700">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
 <body class="scroll-smooth">
 
 <!--Header-->
-
 <div data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="700"="fade-down" class="navbar bg-base-100">
@@ -20,28 +19,26 @@
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li><a>Home</a></li>
-        <li>
-          <a>Services</a>
-        </li>
+        <li><a>Services</a></li>
         <li><a>About us</a></li>
       </ul>
     </div>
-    <a class=""><img src="/img/AADLogo.png" alt="Company Logo"></a>
+    <a class=""><img src="/img/AADLogo.png" alt="Company Logo" id="top"></a>
   </div>
   
   <div class="navbar-end">
-  <div class="navbar-end hidden lg:flex">
+  <div class="navbar-end hidden lg:flex ">
     <ul class="menu menu-horizontal px-1 ">
-      <li class="hover:bg-[#5B61DC]  hover:text-white"><a>Home</a></li>
-      <li class="hover:bg-[#5B61DC] hover:text-white"><a>Services</a></li>
-      <li class="hover:bg-[#5B61DC] hover:text-white"><a>About</a></li>
+      <li class="hover:underline-offset-8  hover:text-[#5B61DC]"><a class="hover:underline-offset-8" href="#top">Home</a></li>
+      <li class="hover:underline-offset-8 hover:text-[#5B61DC]"><a class="hover:underline-offset-8" href="#service">Services</a></li>
+      <li class="hover:text-[#5B61DC]"><a class="hover:underline-offset-8 scroll-smooth" href="#about">About</a></li>
     </ul>
     </div>
-  <button class="btn bg-[#5B61DC] text-white hover:bg-violet-700">Contact Us</button>
+  <button class="btn bg-[#5B61DC] text-white hover:bg-violet-700 scroll-smooth"> <a href="#contact">Contact Us</a></button>
 </div>
   </div>
 </div>
-
+</div>
 
 <!--Hero-->
 
@@ -57,33 +54,149 @@
 </div>
 
 
-<!--Service-->
+<!--Service--> 
 
-<div class="bg-[#172A38]"> 
+<div class="bg-[#172A38] px-5 sm:hidden md:block" id="service"> 
   <h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
-  <div class="block lg:flex pb-10">
-<div class="items-center px-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
-  <img class="m-auto"src="/img/service1.png" alt="">
-  <h2 class="text-[#5B61DC] text-lg font-bold text-center">Web Development</h2>
-  <p class="text-base text-center text-white  2xl:px-16 lg:text-sm">We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  <div class="flex flex-wrap  justify-center pb-10">
+
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
 </div>
-<div class="items-center px-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
-  <img class="m-auto"src="/img/service2.png" alt="">
-  <h2 class="text-[#5B61DC] text-lg font-bold text-center">Mobile Development</h2>
-  <p class="text-base text-center text-white  2xl:px-16 lg:text-sm">We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service2.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Mobile Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
 </div>
-<div class="items-center px-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
-  <img class="m-auto"src="/img/service3.png" alt="">
-  <h2 class="text-[#5B61DC] text-lg font-bold text-center">Custom Software Development</h2>
-  <p class="text-base text-center text-white  2xl:px-16 lg:text-sm">We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service3.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Custom Software Development</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+  </div>
+</div>
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service4.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Virtual Reality (VR)</h2>
+    <p>Dive into fully immersive VR environments designed for gaming, training, and simulations, offering unforgettable user experiences and innovative solutions.</p>
+  </div>
+</div>
+
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service5.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Augmented Reality (AR)</h2>
+    <p>Transform your business with immersive AR experiences that blend the digital and physical worlds, perfect for enhancing customer engagement and streamlining operations.</p>
+  </div>
+</div>
+
+<div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service6.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Business Software</h2>
+    <p>Optimize your operations with custom business software solutions tailored to enhance efficiency, productivity, and growth.</p>
+  </div>
+</div>
+
 </div>
 </div>
+
+
+<!--mobile-view-->
+<div class="md:hidden lg:hidden sm:block bg-[#172A38]  w-fit">
+<h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
+<div class="w-full carousel rounded-box">
+
+  <div class="carousel-item w-full justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
 </div>
+  </div>
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div> 
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div>
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div> 
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div> 
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div> 
+
+  <div class="carousel-item w-full justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
+    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
+  </div>
+</div>
+  </div> 
+</div>
+</div>
+
+
 
 
 <!--About Us-->
 
-<div class="bg-[#5B61DC] p-5 md:flex md:justify-center md:items-center md:px-5 md:h-96 xl:px-72">
+<div class="bg-[#5B61DC] p-5 md:flex md:justify-center md:items-center md:px-5 md:h-96 xl:px-72" id="about">
 <div class="text-center p-2 md:text-right" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
   <h1 class="text-7xl font-bold text-white">About us</h1>
 </div>
@@ -93,14 +206,14 @@
 <p>We envision becoming a leading technology partner, recognized for our commitment to excellence, customer satisfaction, and sustainable practices.</p>
 </div>
 </div>
+</div>
 
 
 <!--Contact Us-->
-
-<div class="max-w-screen-lg mx-auto p-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+<div class="max-w-screen-lg mx-auto p-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" >
     <div class="grid grid-cols-1 md:grid-cols-12 border">
         <div class="bg-[#172A38] md:col-span-4 p-10 text-white">
-            <p class="mt-4 text-sm leading-7 font-regular uppercase">
+            <p class="mt-4 text-sm leading-7 font-regular uppercase" id="contact">
                 Contact
             </p>
             <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
@@ -170,6 +283,7 @@
 </div>
 
 
+
 <!--Footer-->
 
 <div>
@@ -184,12 +298,12 @@
 </div>
 </div>
 </footer>
-<div class="bg-[#5B61DC] text-center p-2 text-[#172A38] text-xs">
+<div class="bg-[#5B61DC] text-center p-2 text-[#ffffff] text-xs">
   <p>© 2024 AAD Software Services. All rights reserved.</p>
 </div>
 
 
-
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
