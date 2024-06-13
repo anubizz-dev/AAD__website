@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/AADfavicon.png"
 </head>
 <body class="scroll-smooth">
 
 <!--Header-->
 <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="700"="fade-down" class="navbar bg-base-100">
+     data-aos-duration="700"="fade-down" class="navbar bg-base-100 fixed top-0 z-50 ">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -55,9 +56,10 @@
 
 
 <!--Service--> 
+<h2 class="bg-[#172A38] font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
 <div class="hidden lg:flex">
 <div class="bg-[#172A38] px-5" id="service"> 
-  <h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
+
   <div class="flex flex-wrap  justify-center pb-10">
 
 
@@ -115,88 +117,103 @@
 </div>
 
 
-<!--service-mobile-view-->
-<div class="bg-[#172A38] lg:hidden">
-<h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
-<div class="w-full carousel rounded-box">
+<!--carousel-->
+<div class="carousel w-full lg:hidden bg-[#172A38]">
 
-  <div class="carousel-item w-full justify-center">
- <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
+
+  <div id="slide1" class="carousel-item relative w-full justify-center">
+    
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service1.png" alt="Web Development" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Web Development</h2>
     <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
   </div>
 </div>
-  </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide6" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
 
-  <div class="carousel-item w-full justify-center">
+
+  <div id="slide2" class="carousel-item relative w-full justify-center">
   <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service2.png" alt="Shoes" /></figure>
+  <figure><img src="/img/Service2.png" alt="Mobile Development" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Mobile Development</h2>
     <p>We design and develop high-performing mobile apps for Android and iOS that engage users and achieve your business goals.</p>
   </div>
 </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
   </div> 
 
-  <div class="carousel-item w-full justify-center">
+
+  <div id="slide3" class="carousel-item relative w-full justify-center">
   <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service3.png" alt="Shoes" /></figure>
+  <figure><img src="/img/Service3.png" alt="Custom Software Development" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Custom Software Development</h2>
     <p>We create bespoke software solutions tailored to meet your unique business needs, enhancing efficiency and driving growth.</p>
   </div>
 </div>
-  </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
 
-  <div class="carousel-item w-full justify-center">
-  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service4.png" alt="Shoes" /></figure>
+
+  <div id="slide4" class="carousel-item relative w-full justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service4.png" alt="Virtual Reality (VR)" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Virtual Reality (VR)</h2>
     <p>Dive into fully immersive VR environments designed for gaming, training, and simulations, offering unforgettable user experiences and innovative solutions.</p>
   </div>
 </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide5" class="btn btn-circle">❯</a>
+    </div>
   </div> 
 
-  <div class="carousel-item w-full justify-center">
-  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service5.png" alt="Shoes" /></figure>
+
+  <div id="slide5" class="carousel-item relative w-full justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service5.png" alt="Augmented Reality (AR)" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Augmented Reality (AR)</h2>
     <p>Transform your business with immersive AR experiences that blend the digital and physical worlds, perfect for enhancing customer engagement and streamlining operations.</p>
   </div>
 </div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide6" class="btn btn-circle">❯</a>
+    </div>
   </div> 
 
-  <div class="carousel-item w-full justify-center">
-    <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service1.png" alt="Shoes" /></figure>
-  <div class="card-body">
-    <h2 class="card-title text-[#5B61DC]">Web Development</h2>
-    <p>We build responsive, user-centric websites and web applications that provide a seamless experience across all devices.</p>
-  </div>
-</div>
-  </div> 
 
-  <div class="carousel-item w-full justify-center">
-  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
-  <figure><img src="/img/Service6.png" alt="Shoes" /></figure>
+  <div id="slide6" class="carousel-item relative w-full justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl m-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+  <figure><img src="/img/Service6.png" alt="Business Software" /></figure>
   <div class="card-body">
     <h2 class="card-title text-[#5B61DC]">Business Software</h2>
     <p>Optimize your operations with custom business software solutions tailored to enhance efficiency, productivity, and growth.</p>
   </div>
 </div>
-
-</div>
-</div>
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide5" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
   </div> 
 
 
-</div>
-</div>
 
+</div>
 
 
 
