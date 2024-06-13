@@ -12,7 +12,7 @@
 <!--Header-->
 <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="700"="fade-down" class="navbar bg-base-100">
+     data-aos-duration="700"="fade-down" class="navbar bg-base-100 fixed top-0 z-50 ">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -56,9 +56,10 @@
 
 
 <!--Service--> 
+<h2 class="bg-[#172A38] font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
 <div class="hidden lg:flex">
 <div class="bg-[#172A38] px-5" id="service"> 
-  <h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">SERVICES</h2>
+
   <div class="flex flex-wrap  justify-center pb-10">
 
 
@@ -117,7 +118,6 @@
 
 
 <!--carousel-->
-<h2 class="font-bold text-4xl pt-10 text-center text-[#5B61DC] bg-[#172A38]">SERVICES</h2>
 <div class="carousel w-full lg:hidden bg-[#172A38]">
 
 
